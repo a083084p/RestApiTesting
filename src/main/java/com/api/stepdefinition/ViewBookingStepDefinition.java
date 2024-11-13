@@ -4,7 +4,6 @@ import com.api.model.BookingDetailsDTO;
 import com.api.model.BookingID;
 import com.api.utils.ResponseHandler;
 import com.api.utils.TestContext;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,16 +12,14 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.util.Map;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class ViewBookingDetailsStepdefinition {
+public class ViewBookingStepDefinition {
     
     private TestContext testContext;
-    private static final Logger LOGGER = LogManager.getLogger(ViewBookingDetailsStepdefinition.class);
-    public ViewBookingDetailsStepdefinition(TestContext testContext) {
+    private static final Logger LOGGER = LogManager.getLogger(ViewBookingStepDefinition.class);
+    public ViewBookingStepDefinition(TestContext testContext) {
         this.testContext = testContext;
     }
     
